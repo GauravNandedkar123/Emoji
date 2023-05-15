@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emoji Stars Animation</title>
+  <style>
+    /* CSS for emoji stars animation */
+    .emoji-stars {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #222;
+    }
+    
+    .emoji {
+      font-size: 80px;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    
+    .emoji-happy {
+      animation-name: emojiHappy;
+    }
+    
+    .emoji-sad {
+      animation-name: emojiSad;
+    }
+    
+    @keyframes emojiHappy {
+      0% {
+        transform: scale(1);
+        color: yellow;
+      }
+      50% {
+        transform: scale(1.5);
+        color: orange;
+      }
+      100% {
+        transform: scale(1);
+        color: yellow;
+      }
+    }
+    
+    @keyframes emojiSad {
+      0% {
+        transform: scale(1);
+        color: lightblue;
+      }
+      50% {
+        transform: scale(0.8);
+        color: lightgray;
+      }
+      100% {
+        transform: scale(1);
+        color: lightblue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji-stars">
+    <div class="emoji emoji-happy">&#x1F603;</div>
+    <div class="emoji emoji-sad">&#x1F614;</div>
+  </div>
+</body>
+</html>
